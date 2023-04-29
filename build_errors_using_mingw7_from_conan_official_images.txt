@@ -1,0 +1,476 @@
+Exporting package recipe
+boost_test/0.0.1 exports_sources: Copied 1 '.txt' file: CMakeLists.txt
+boost_test/0.0.1 exports_sources: Copied 2 '.cpp' files: boost_test.cpp, main.cpp
+boost_test/0.0.1 exports_sources: Copied 1 '.h' file: boost_test.h
+boost_test/0.0.1: The stored package has not changed
+boost_test/0.0.1: Exported revision: cc95cea6d25cc3e5d3da1e22fe58607b
+Configuration (profile_host):
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=11
+compiler.libcxx=libstdc++11
+compiler.version=7
+os=Windows
+[options]
+boost:without_stacktrace=True
+[build_requires]
+[env]
+CC=x86_64-w64-mingw32-gcc
+CXX=x86_64-w64-mingw32-g++
+LD=x86_64-w64-mingw32-ld
+[conf]
+tools.system.package_manager:mode=install
+tools.system.package_manager:sudo=True
+[buildenv]
+CC=x86_64-w64-mingw32-gcc
+CXX=x86_64-w64-mingw32-g++
+LD=x86_64-w64-mingw32-ld
+
+Configuration (profile_build):
+[settings]
+arch=x86_64
+build_type=RelWithDebInfo
+compiler=gcc
+compiler.cppstd=11
+compiler.libcxx=libstdc++11
+compiler.version=12
+os=Linux
+[options]
+[build_requires]
+[env]
+
+Installing package: boost_test/0.0.1
+Requirements
+    boost/1.80.0 from 'conancenter' - Cache
+    boost_test/0.0.1 from local cache - Cache
+    bzip2/1.0.8 from 'conancenter' - Cache
+    zlib/1.2.13 from 'conancenter' - Cache
+Packages
+    boost/1.80.0:1d29780ca7d318cf675fc6a8d9b582b212c56d1c - Build
+    boost_test/0.0.1:ebb700780c7f5f9c2416cf504291c4c5fb685a08 - Build
+    bzip2/1.0.8:456177cc52f814bf60d65d5b5889191eb5628935 - Cache
+    zlib/1.2.13:42951bc9791ea38175dc6d678bd77956f88c4796 - Cache
+Build requirements
+    b2/4.9.6 from 'conancenter' - Cache
+    cmake/3.25.3 from 'conancenter' - Cache
+    ninja/1.11.1 from 'conancenter' - Cache
+Build requirements packages
+    b2/4.9.6:4db1be536558d833e52e862fd84d64d75c2b3656 - Cache
+    cmake/3.25.3:4db1be536558d833e52e862fd84d64d75c2b3656 - Cache
+    ninja/1.11.1:252f7e09f641bef29a75fc98d05ac217b842cde4 - Cache
+
+Cross-build from 'Linux:x86_64' to 'Windows:x86_64'
+Installing (downloading, building) binaries...
+b2/4.9.6: Already installed!
+bzip2/1.0.8: Already installed!
+cmake/3.25.3: Already installed!
+cmake/3.25.3: Appending PATH environment variable: /home/conan/.conan/data/cmake/3.25.3/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin
+ninja/1.11.1: Already installed!
+zlib/1.2.13: Already installed!
+boost/1.80.0: Applying build-requirement: b2/4.9.6
+boost/1.80.0: Building your package in /home/conan/.conan/data/boost/1.80.0/_/_/build/1d29780ca7d318cf675fc6a8d9b582b212c56d1c
+boost/1.80.0: Generator txt created conanbuildinfo.txt
+boost/1.80.0: Calling generate()
+boost/1.80.0: Aggregating env generators
+boost/1.80.0: Calling build()
+boost/1.80.0: Cross building, detecting compiler...
+boost/1.80.0: Cross building flags: []
+notice: found boost-build.jam at /home/conan/.conan/data/boost/1.80.0/_/_/source/src/boost-build.jam
+notice: loading B2 from /home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel/bootstrap.jam
+notice: Searching '/etc' '/home/conan' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/util' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/build' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/tools' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/contrib' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/.' for site-config configuration file 'site-config.jam'.
+notice: Configuration file 'site-config.jam' not found in '/etc' '/home/conan' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/kernel' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/util' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/build' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/tools' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/contrib' '/home/conan/.conan/data/b2/4.9.6/_/_/package/4db1be536558d833e52e862fd84d64d75c2b3656/bin/.b2/.'.
+notice: Loading explicitly specified user configuration file:
+    /home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/user-config.jam
+notice: Searching '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build' for user-config configuration file 'user-config.jam'.
+notice: Loading user-config configuration file 'user-config.jam' from '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build'.
+notice: [zlib] Using pre-installed library
+notice: [zlib] Condition
+notice: [bzip2] Using pre-installed library
+notice: [bzip2] Condition
+notice: will use 'x86_64-w64-mingw32-g++' for gcc, condition <toolset>gcc-7
+notice: using gcc libraries :: <toolset>gcc-7 :: /usr/bin /usr/lib /usr/lib32 /usr/lib64
+notice: using gcc archiver :: <toolset>gcc-7 :: /usr/x86_64-w64-mingw32/bin/ar
+warning: toolset gcc initialization: can not find tool windres
+warning: initialized from /home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/user-config.jam:5
+notice: using rc compiler :: <toolset>gcc-7 :: /usr/bin/as
+notice: [zlib] zlib is already configured
+notice: [bzip2] bzip is already configured
+notice: iostreams: not using lzma compression 
+notice: iostreams: not using zstd compression 
+notice: [python-cfg] Configuring python...
+notice: [python-cfg] Checking interpreter command "python"...
+notice: [python-cfg] running command 'python -c "from sys import *; print('version=%d.%d\nplatform=%s\nprefix=%s\nexec_prefix=%s\nexecutable=%s' % (version_info[0],version_info[1],platform,prefix,exec_prefix,executable))" 2>&1'
+notice: [python-cfg] ...requested configuration matched!
+notice: [python-cfg] Details of this Python configuration:
+notice: [python-cfg]   interpreter command: "python"
+notice: [python-cfg]   include path: "/opt/pyenv/versions/3.7.13/include/python3.7m"
+notice: [python-cfg]   library path: "/opt/pyenv/versions/3.7.13/lib/python3.7/config" "/opt/pyenv/versions/3.7.13/lib"
+notice: [python-cfg] Checking for NumPy...
+notice: [python-cfg] running command 'python -c "import sys; sys.stderr = sys.stdout; import numpy; print(numpy.get_include())"'
+notice: [python-cfg] NumPy disabled. Reason:
+notice: [python-cfg]   python -c "import sys; sys.stderr = sys.stdout; import numpy; print(numpy.get_include())" aborted with 
+notice: [python-cfg]   Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+Performing configuration checks
+
+    - default address-model    : 64-bit [1]
+    - default architecture     : x86 [1]
+    - compiler supports SSE2   : yes [2]
+    - compiler supports SSE4.1 : yes [2]
+    - has synchronization.lib  : no [2]
+    - has std::atomic_ref      : no [2]
+    - has statx                : no [2]
+    - has statx syscall        : no [2]
+    - has BCrypt API           : no [2]
+    - is Windows CE            : no [2]
+    - has init_priority attribute : yes [2]
+    - has stat::st_blksize     : no [2]
+    - has stat::st_mtim        : no [2]
+    - has stat::st_mtimensec   : no [2]
+    - has stat::st_mtimespec   : no [2]
+    - has stat::st_birthtim    : no [2]
+    - has stat::st_birthtimensec : no [2]
+    - has stat::st_birthtimespec : no [2]
+    - has fdopendir(O_NOFOLLOW) : no [2]
+    - has POSIX *at APIs       : no [2]
+    - cxx11_auto_declarations  : yes [2]
+    - cxx11_constexpr          : yes [2]
+    - cxx11_defaulted_functions : yes [2]
+    - cxx11_final              : yes [2]
+    - cxx11_hdr_mutex          : no [2]
+    - cxx11_hdr_tuple          : yes [2]
+    - cxx11_lambdas            : yes [2]
+    - cxx11_noexcept           : yes [2]
+    - cxx11_nullptr            : yes [2]
+    - cxx11_rvalue_references  : yes [2]
+    - cxx11_template_aliases   : yes [2]
+    - cxx11_thread_local       : yes [2]
+    - cxx11_variadic_templates : yes [2]
+    - cxx11_auto_declarations  : yes [3]
+    - cxx11_constexpr          : yes [3]
+    - cxx11_defaulted_functions : yes [3]
+    - cxx11_final              : yes [3]
+    - cxx11_hdr_mutex          : no [3]
+    - cxx11_hdr_tuple          : yes [3]
+    - cxx11_lambdas            : yes [3]
+    - cxx11_noexcept           : yes [3]
+    - cxx11_nullptr            : yes [3]
+    - cxx11_rvalue_references  : yes [3]
+    - cxx11_template_aliases   : yes [3]
+    - cxx11_thread_local       : yes [3]
+    - cxx11_variadic_templates : yes [3]
+    - has_icu builds           : no [2]
+    - zlib                     : yes [4]
+    - bzip2                    : yes [4]
+    - cxx11_decltype           : yes [2]
+    - cxx11_basic_alignas      : yes [2]
+    - native atomic int32 supported : yes [2]
+    - has message compiler     : no [2]
+    - native syslog supported  : no [2]
+    - pthread supports robust mutexes : no [2]
+    - compiler supports SSSE3  : yes [2]
+    - compiler supports AVX2   : yes [2]
+    - gcc visibility           : yes [2]
+    - sfinae_expr              : yes [2]
+    - cxx11_unified_initialization_syntax : yes [2]
+    - cxx11_hdr_initializer_list : yes [2]
+    - cxx11_hdr_chrono         : yes [2]
+    - cxx11_numeric_limits     : yes [2]
+    - cxx11_hdr_array          : yes [2]
+    - cxx11_hdr_atomic         : yes [2]
+    - cxx11_hdr_type_traits    : yes [2]
+    - cxx11_allocator          : yes [2]
+    - cxx11_explicit_conversion_operators : yes [2]
+    - gcc visibility           : yes [5]
+    - cxx11_noexcept           : yes [5]
+    - cxx11_rvalue_references  : yes [5]
+    - sfinae_expr              : yes [5]
+    - cxx11_auto_declarations  : yes [5]
+    - cxx11_lambdas            : yes [5]
+    - cxx11_unified_initialization_syntax : yes [5]
+    - cxx11_hdr_tuple          : yes [5]
+    - cxx11_hdr_initializer_list : yes [5]
+    - cxx11_hdr_chrono         : yes [5]
+    - cxx11_thread_local       : yes [5]
+    - cxx11_constexpr          : yes [5]
+    - cxx11_nullptr            : yes [5]
+    - cxx11_numeric_limits     : yes [5]
+    - cxx11_decltype           : yes [5]
+    - cxx11_hdr_array          : yes [5]
+    - cxx11_hdr_atomic         : yes [5]
+    - cxx11_hdr_type_traits    : yes [5]
+    - cxx11_allocator          : yes [5]
+    - cxx11_explicit_conversion_operators : yes [5]
+    - long double support      : yes [5]
+    - cxx11_static_assert      : yes [2]
+    - std::fstream is moveable and swappable : yes [2]
+    - Has Large File Support   : yes [2]
+    - Has attribute init_priority : yes [2]
+    - BOOST_COMP_GNUC >= 4.3.0 : yes [2]
+    - cxx11_hdr_thread         : no [2]
+    - cxx11_hdr_regex          : yes [2]
+    - cxx11_hdr_thread         : no [3]
+    - cxx11_hdr_regex          : yes [3]
+
+[1] gcc-7/trgt-os-wndws
+[2] gcc-7/rls/abi-ms/bnry-frmt-pe/bst.l-off/bst.l-off/lnk-sttc/nm-on/pythn-3.7/trgt-os-wndws/thrdp-wn32/thrd-mlt/vsblt-hdn
+[3] gcc-7/rls/abi-ms/bnry-frmt-pe/bst.l-off/bst.l-off/bld-no/lnk-sttc/nm-on/pythn-3.7/trgt-os-wndws/thrdp-wn32/thrd-mlt/vsblt-hdn
+[4] lnk-sttc
+[5] gcc-7/rls/abi-ms/bnry-frmt-pe/bst.l-off/bst.l-off/lnk-sttc/nm-on/pch-off/pythn-3.7/trgt-os-wndws/thrdp-wn32/thrd-mlt/vsblt-hdn
+
+Component configuration:
+
+    - atomic                   : building
+    - chrono                   : building
+    - container                : building
+    - context                  : building
+    - contract                 : building
+    - coroutine                : building
+    - date_time                : building
+    - exception                : building
+    - fiber                    : building
+    - filesystem               : building
+    - graph                    : building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : building
+    - json                     : building
+    - locale                   : building
+    - log                      : building
+    - math                     : building
+    - mpi                      : not building
+    - nowide                   : building
+    - program_options          : building
+    - python                   : not building
+    - random                   : building
+    - regex                    : building
+    - serialization            : building
+    - stacktrace               : not building
+    - system                   : building
+    - test                     : building
+    - thread                   : building
+    - timer                    : building
+    - type_erasure             : building
+    - wave                     : building
+
+In file included from ./boost/json/src.hpp:37:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/parse.ipp: In function ‘boost::json::value boost::json::parse(boost::json::string_view, std::error_code&, boost::json::storage_ptr, const boost::json::parse_options&)’:
+./boost/json/impl/parse.ipp:46:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/parse.ipp:46:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:38:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/parser.ipp: In member function ‘std::size_t boost::json::parser::write_some(const char*, std::size_t, std::error_code&)’:
+./boost/json/impl/parser.ipp:80:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/parser.ipp:80:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:38:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/parser.ipp: In member function ‘std::size_t boost::json::parser::write(const char*, std::size_t, std::error_code&)’:
+./boost/json/impl/parser.ipp:125:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/parser.ipp:125:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:39:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/pointer.ipp: In member function ‘const boost::json::value* boost::json::value::find_pointer(boost::json::string_view, std::error_code&) const’:
+./boost/json/impl/pointer.ipp:328:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/pointer.ipp:328:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:43:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/stream_parser.ipp: In member function ‘std::size_t boost::json::stream_parser::write_some(const char*, std::size_t, std::error_code&)’:
+./boost/json/impl/stream_parser.ipp:78:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/stream_parser.ipp:78:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:43:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/stream_parser.ipp: In member function ‘std::size_t boost::json::stream_parser::write(const char*, std::size_t, std::error_code&)’:
+./boost/json/impl/stream_parser.ipp:123:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/stream_parser.ipp:123:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+In file included from ./boost/json/src.hpp:43:0,
+                 from libs/json/src/src.cpp:10:
+./boost/json/impl/stream_parser.ipp: In member function ‘void boost::json::stream_parser::finish(std::error_code&)’:
+./boost/json/impl/stream_parser.ipp:166:10: error: no match for ‘operator=’ (operand types are ‘std::error_code’ and ‘boost::json::error_code {aka boost::system::error_code}’)
+     ec = jec;
+          ^~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/bits/ios_base.h:46:0,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/ios:42,
+                 from ./boost/core/detail/string_view.hpp:30,
+                 from ./boost/json/string_view.hpp:14,
+                 from ./boost/json/kind.hpp:14,
+                 from ./boost/json/array.hpp:14,
+                 from ./boost/json.hpp:15,
+                 from ./boost/json/src.hpp:27,
+                 from libs/json/src/src.cpp:10:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note: candidate: template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum)
+       operator=(_ErrorCodeEnum __e) noexcept
+       ^~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: note:   template argument deduction/substitution failed:
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error: In substitution of ‘template<class _ErrorCodeEnum> typename std::enable_if<std::is_error_code_enum<_Tp>::value, std::error_code&>::type std::error_code::operator=(_ErrorCodeEnum) [with _ErrorCodeEnum = boost::system::error_code]’:
+./boost/json/impl/stream_parser.ipp:166:10:   required from here
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:174:7: error: no type named ‘type’ in ‘struct std::enable_if<false, std::error_code&>’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(const std::error_code&)
+   struct error_code
+          ^~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘const std::error_code&’
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note: candidate: std::error_code& std::error_code::operator=(std::error_code&&)
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/include/c++/system_error:146:10: note:   no known conversion for argument 1 from ‘boost::json::error_code {aka boost::system::error_code}’ to ‘std::error_code&&’
+...failed updating 1 target...
+boost/1.80.0: 
+boost/1.80.0: WARN: Package binary is corrupted, removing: 1d29780ca7d318cf675fc6a8d9b582b212c56d1c
+boost/1.80.0: WARN: Build folder is dirty, removing it: /home/conan/.conan/data/boost/1.80.0/_/_/build/1d29780ca7d318cf675fc6a8d9b582b212c56d1c
+boost/1.80.0: WARN: replace_in_file didn't find pattern '$(>) > $(<)' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/libs/stacktrace/build/Jamfile.v2' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern '/* thread_local */' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/boost/stacktrace/detail/libbacktrace_impls.hpp' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern '/* static __thread */' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/boost/stacktrace/detail/libbacktrace_impls.hpp' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern 'local generic-os = [ set.difference $(all-os) : aix darwin vxworks solaris osf hpux ] ;' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/src/tools/gcc.jam' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern 'local no-threading = android beos haiku sgi darwin vxworks ;' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/src/tools/gcc.jam' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern '    <conditional>@numa' in '/home/conan/.conan/data/boost/1.80.0/_/_/source/src/libs/fiber/build/Jamfile.v2' file.
+boost/1.80.0: WARN: Patching user-config.jam
+boost/1.80.0: WARN: 
+using zlib : 1.2.13 : <include>"/home/conan/.conan/data/zlib/1.2.13/_/_/package/42951bc9791ea38175dc6d678bd77956f88c4796/include" <search>"/home/conan/.conan/data/zlib/1.2.13/_/_/package/42951bc9791ea38175dc6d678bd77956f88c4796/lib" <name>z ;
+using bzip2 : 1.0.8 : <include>"/home/conan/.conan/data/bzip2/1.0.8/_/_/package/456177cc52f814bf60d65d5b5889191eb5628935/include" <search>"/home/conan/.conan/data/bzip2/1.0.8/_/_/package/456177cc52f814bf60d65d5b5889191eb5628935/lib" <name>bz2 ;
+using "gcc" :  :  "x86_64-w64-mingw32-g++" : 
+ ;
+boost/1.80.0: WARN: b2 -q numa=on target-os=windows architecture=x86 address-model=64 binary-format=pe abi=ms --layout=system --user-config=/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=off --disable-iconv threading=multi visibility=hidden link=static variant=release --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-system --with-test --with-thread --with-timer --with-type_erasure --with-wave toolset=gcc cxxflags=-std=c++11 define=_GLIBCXX_USE_CXX11_ABI=1 pch=on linkflags="" cxxflags="-fPIC" install --prefix=/home/conan/.conan/data/boost/1.80.0/_/_/package/1d29780ca7d318cf675fc6a8d9b582b212c56d1c -j16 --abbreviate-paths -d0 --debug-configuration --build-dir="/home/conan/.conan/data/boost/1.80.0/_/_/build/1d29780ca7d318cf675fc6a8d9b582b212c56d1c/build-release"
+boost/1.80.0: ERROR: Package '1d29780ca7d318cf675fc6a8d9b582b212c56d1c' build failed
+boost/1.80.0: WARN: Build folder /home/conan/.conan/data/boost/1.80.0/_/_/build/1d29780ca7d318cf675fc6a8d9b582b212c56d1c/build-release
+ERROR: boost/1.80.0: Error in build() method, line 887
+	self.run(full_command)
+	ConanException: Error 1 while executing b2 -q numa=on target-os=windows architecture=x86 address-model=64 binary-format=pe abi=ms --layout=system --user-config=/home/conan/.conan/data/boost/1.80.0/_/_/source/src/tools/build/user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=off --disable-iconv threading=multi visibility=hidden link=static variant=release --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-system --with-test --with-thread --with-timer --with-type_erasure --with-wave toolset=gcc cxxflags=-std=c++11 define=_GLIBCXX_USE_CXX11_ABI=1 pch=on linkflags="" cxxflags="-fPIC" install --prefix=/home/conan/.conan/data/boost/1.80.0/_/_/package/1d29780ca7d318cf675fc6a8d9b582b212c56d1c -j16 --abbreviate-paths -d0 --debug-configuration --build-dir="/home/conan/.conan/data/boost/1.80.0/_/_/build/1d29780ca7d318cf675fc6a8d9b582b212c56d1c/build-release"

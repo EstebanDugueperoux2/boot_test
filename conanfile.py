@@ -1,6 +1,6 @@
 from conan import ConanFile
-from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout
-
+from conan.tools.cmake import CMakeToolchain, CMake, CMakeDeps, cmake_layout
+from conan.tools.build import cross_building
 
 class BoostTestConan(ConanFile):
     name = "boost_test"
@@ -19,12 +19,37 @@ class BoostTestConan(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
 
+    options = {
+        "shared": [True, False],
+        "fPIC": [True, False],
+        "test": [True, False],
+    }
+    default_options = {
+        "shared": False,
+        "fPIC": True,
+        "test": False,
+        "boost:without_stacktrace": True
+    }
+
+    def requirements(self):
+        self.requires('boost/1.81.0')
+
+    def build_requirements(self):
+        self.tool_requires("cmake/3.25.3")
+        self.tool_requires("ninja/1.11.1")
+        # self.tool_requires("ccache/4.7.4")
+        if self.options.test:
+            self.test_requires("gtest/1.13.0")
+
     def layout(self):
         cmake_layout(self)
 
     def generate(self):
         tc = CMakeToolchain(self)
         tc.generate()
+
+        cmake = CMakeDeps(self)
+        cmake.generate()
 
     def build(self):
         cmake = CMake(self)
